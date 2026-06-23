@@ -1,0 +1,164 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("img/money.jpg");
+}
+
+.converter-box{
+    margin: 0 auto;
+    padding: 40px 40px 60px;
+    width: 520px;
+    border-radius: 10px;
+    background-color: rgba(248, 240, 240, 0.345);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 12px 22px;
+}
+
+.converter-box h1{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+.currency-converter .form{
+    position: relative;
+}
+
+.form-field .form{
+    display: flex;
+    flex-direction:column;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-field .info{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.info img{
+    height: 45px;
+
+}
+
+.info select{
+    margin-left: 10px;
+    font-weight: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(115, 20, 20);
+}
+
+.info select option{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form-field .amount, .result{
+    padding-left: 30px;
+    margin-bottom: 2rem;
+}
+
+.amount input, .result{
+    width: 90%;
+    border: none;
+    font-size: 2rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.amount input[type="number"]::-webkit-inner-spin-button,
+.amount input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*styling exchange icon*/
+
+.form .icon{
+    position: relative;
+    margin: 0 0.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 3px solid grey;
+    cursor: pointer;
+}
+
+.icon i{
+    position: absolute;
+    top: 50%;
+    left: 12rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: rgb(248, 180, 91);
+    border-radius: 60%;
+    transition: all 0.2s ease;
+}
+
+.icon i:active, .icon i:focus{
+    transform: translateY(-50%) rotate(90deg) scale(0.6);
+}
+
+/* styling buttons*/
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+button {
+    width: 170px;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 80px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.buttons .clear{
+    background-color: rgb(239, 166, 31);
+    margin-right: 10px;
+}
+
+.buttons .clear:hover,
+.buttons .convert:hover{
+    background-color: rgb(248, 198, 104);
+}
+
+.buttons .convert{
+    background-color:  rgb(249, 154, 22);
+}
+
+/*styling scrollbar*/
+
+.info select::-webkit-scrollbar{
+    width: 10px;
+}
+
+.info select::-webkit-scrollbar-track{
+    background-color: orange;
+}
+
+.info select::-webkit-scrollbar-thumb{
+    background-color: rgb(249, 207, 171);
+}
