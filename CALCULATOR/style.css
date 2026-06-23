@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    background-color: #e2e2e2; 
+}
+
+.calci{
+   border: 1px solid black; 
+   padding: 25px;
+   border-radius: 35px;
+   background-color: rgb(182, 216, 223);
+}
+
+#input-box {
+    width: 310px;
+    height: 110px;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    background: rgb(255, 245, 253);
+    box-shadow: 0px 3px 10px;
+    font-size: 35px;
+    text-align: left;
+    border-radius: 15px;
+    resize: none; 
+    overflow-y: hidden; 
+}
+
+
+textarea::placeholder{
+    color: rgb(95, 95, 95);
+}
+
+.calci-btn{
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-gap: 10px;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    margin: 2px;
+    border-radius: 15px;
+    color: black;
+    background: rgb(250, 248, 248);
+    box-shadow: 3px 3px 3px;
+    font-size: 30px;
+}
+
+button:hover{
+    background-color: rgb(199, 194, 194);
+}
+
+.AC-btn, .DEL-btn{
+    grid-column: span 2;
+    background-color: rgb(220, 220, 220);
+}
+
+.equal-btn{
+    background-color: rgb(220, 220, 220);
+}
+
+.operators{
+    background-color: rgb(255, 234, 169);
+}
+
+
